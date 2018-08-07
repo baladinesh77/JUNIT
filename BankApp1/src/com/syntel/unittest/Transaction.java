@@ -24,7 +24,7 @@ public class Transaction {
 			System.out.println("Account doesnot exists");
 			return;
 		}
-		accounts.put(accNo, balance+amt);
+		accounts.put(accNo, balance-amt);
 	}
 
 	public void payBill(int accNo, float amt, int vendorAccNo) {
